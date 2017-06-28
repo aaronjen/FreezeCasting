@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>GPU acceleration apply on freeze casting simulationn</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <body id="myPage">
     <!-- Navbar -->
     <div class="w3-top">
         <div class="w3-bar w3-theme-d2 w3-left-align">
             <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-            <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
-            <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
-            <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+            <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home"></i></a>
+            <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">團隊</a>
+            <a href="#introduction" class="w3-bar-item w3-button w3-hide-small w3-hover-white">背景介紹</a>
+			<a href="#purpose" class="w3-bar-item w3-button w3-hide-small w3-hover-white">計畫目標</a>
+			<a href="#result" class="w3-bar-item w3-button w3-hide-small w3-hover-white">成果比較</a>
             <!-- <div class="w3-dropdown-hover w3-hide-small">
                 <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>
                 <div class="w3-dropdown-content w3-card-4 w3-bar-block">
@@ -26,60 +27,107 @@
         </div>
     </div>
     <!-- Image Header -->
-    <div class="w3-display-container w3-animate-opacity">
-        <img src="/w3images/sailboat.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
-        <!-- <div class="w3-container w3-display-bottomleft w3-margin-bottom">
-            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">LEARN W3.CSS</button>
-        </div> -->
+    <div class="w3-container w3-padding-64 w3-center w3-theme-l1">
+		<h1 style="margin-top:70px;margin-left:20px;font-weight:bold;text-align:left">GPU accelerate freeze casting simulation</h1>		
+       
     </div>
     
     <!-- Team Container -->
     <div class="w3-container w3-padding-64 w3-center" id="team">
-        <h2>OUR TEAM</h2>
-        <p>Meet the team - our office rats:</p>
+        <h2>團隊成員</h2>
+        <p></p>
         <div class="w3-row">
             <br>
             <div style="width:33%;float: left;">
-                <img src="https://images-na.ssl-images-amazon.com/images/G/01/aplusautomation/vendorimages/65fa961e-8f22-4fe6-a420-3c3c26dd2953.jpg._CB289161999__SL300__.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+                <img src="img/Aaron.jpg" alt="Aaron" style="width:45%" class="w3-circle w3-hover-opacity">
                 <h3>任精瑋</h3>
             </div>
             <div style="width:33%;float: left;">
-                <img src="https://images-na.ssl-images-amazon.com/images/G/01/aplusautomation/vendorimages/65fa961e-8f22-4fe6-a420-3c3c26dd2953.jpg._CB289161999__SL300__.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+                <img src="img/Hengry.jpg" alt="Hengry" style="width:45%" class="w3-circle w3-hover-opacity">
                 <h3>李珩</h3>
             </div>
             <div style="width:33%;float: left;">
-                <img src="https://images-na.ssl-images-amazon.com/images/G/01/aplusautomation/vendorimages/65fa961e-8f22-4fe6-a420-3c3c26dd2953.jpg._CB289161999__SL300__.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+                <img src="img/Mich.jpg" alt="Mich" style="width:45%" class="w3-circle w3-hover-opacity">
                 <h3>許育銓</h3>
             </div>
         </div>
     </div>
 
     <!-- Work Row -->
-    <div class="w3-container w3-padding-64 w3-theme-l1" id="work">
+    <div class="w3-container w3-padding-64" id="introduction">
         <h2>背景介紹</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<div style="width:50%; float:left">
+			<p>冷凍鑄造法是仿生多孔材料的熱門製程，藉此產生具有優異性質的材料。其概念是將陶瓷懸浮液冷凍，以冰晶作為鑄模，藉由冰晶的生長推開懸浮液中的粉體，構成複雜的微結構。最終將冰晶昇華，燒結粉體得仿生多孔材料。而調整製程中的參數，如溫度梯度、漿料濃度、冷凍速度，可以產生不同的微結構，也就能得到不同的材料性質。</p>
+			<p>為研究製程參數對於微結構之影響，需以模擬代替耗時的製程。陳俊杉教授的研究團隊過去成功的以相場法結合二元金屬模型，推導出冷凍鑄造法之模型，並以有限元素法實作。最後與實驗對照，展現出相同的趨勢，也證實了該模型的準確性。</p>
+		</div>
+		<div style="width:50%; float:left">
+			<p><img src="img/ExperimentAndSimulation.jpg" style="width:80%;margin: 0 auto;display:block"></img></p>
+		</div>
+	</div>
+
+    <div class="w3-container w3-padding-64 w3-theme-l1" id="purpose">
+        
+		<div style="width:50%;float:left">
+			<div style="width:80%;margin: 0 auto; display:block">
+				<img src="img/result162000.jpg" style="width:50%;float:left"></img>
+				<img src="img/mesh162000.jpg" style="width:50%;float:left"></img>
+			</div>
+		</div>
+		<div style="width:50%; float:left">
+		<h2>目標</h2>
+        <p>有限元素法在處理複雜的結構時，需要進行大量的運算，冷凍鑄造法模型以單核心CPU運算時，一次完整的模擬可能需要數週甚至數個月的時間。本次計畫即希望透過程式優化及GPU加速，大幅降低模擬的時間，以利於研究的進行。</p>
+		<p>為加快有限元素法的模擬過程，我們針對最耗時的兩個步驟加速。最耗時的是元素的集合(Assembly)，在有限元素法中，整個場域會被分隔為數萬個小區塊(元素)，計算完各個元素的資料後，需要再將所有元素的資料加進一代表系統的矩陣。</p>
+		</div>
     </div>
 
-    <div class="w3-container w3-padding-64">
-        <h2>目標</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-
-    <div class="w3-container w3-padding-64 w3-theme-l1">
+    <div class="w3-container w3-padding-64" id="result">
         <h2>成果</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p></p>
+		<h3>比較</h3>
+		<table class="w3-border w3-centered" style="width:80%">
+			<tr>
+				<th>time step</th>
+				<th>cpu times for benchmark (sec)</th>
+				<th>cpu times for this project (sec)</th>
+			</tr>
+			<tr>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td>9000</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td>27000</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td>81000</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td>162000</td>
+				<td>0</td>
+				<td>0</td>
+			</tr>
+		</table>
     </div>
     
     <!-- Footer -->
     <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-        <h4>Follow Us</h4>
+        <!--<h4>Follow Us</h4>
         <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
         <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
         <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
         <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
         <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-        <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
+        <div style="position:relative;bottom:0px;z-index:1;" class="w3-tooltip w3-right">
             <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
     <i class="fa fa-chevron-circle-up"></i></span></a>
         </div>
